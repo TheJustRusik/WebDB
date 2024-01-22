@@ -18,9 +18,9 @@ public class WebBdApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        List<Jobs> jobsEntities = jobsRepository.findAll();
-        for (Jobs job : jobsEntities){
-            System.out.println(job.getJob_id() + " " + job.getJob_title() + " " + job.getMin_salary() + " " + job.getMax_salary());
+        List<Test_Table> testTableEntities = jobsRepository.findAll();
+        for (Test_Table job : testTableEntities){
+            System.out.println(job.getId() + " " + job.getComment());
         }
 
     }
