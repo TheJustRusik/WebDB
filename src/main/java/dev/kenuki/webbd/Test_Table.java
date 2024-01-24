@@ -15,5 +15,11 @@ public class Test_Table {
     private Long id;
     private String comment;
 
+    public Test_Table(){
+
+    }
+    public Test_Table(String comment){
+        this.comment = comment;
+    }
 
 }
